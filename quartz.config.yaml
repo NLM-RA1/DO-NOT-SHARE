@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: DIRECTORY
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -42,7 +42,7 @@ configuration:
         textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
-    enabled: true
+    enabled: false
     options:
       defaultDateType: modified
       priority:
@@ -51,7 +51,7 @@ plugins:
         - filesystem
     order: 10
   - source: github:quartz-community/syntax-highlighting
-    enabled: true
+    enabled: false
     options:
       theme:
         light: github-light
@@ -81,8 +81,8 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
-      priority: 30
+      position: left
+      priority: 50
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
@@ -154,14 +154,16 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Chapters
     layout:
       position: left
-      priority: 50
+      priority: 80
   - source: github:quartz-community/graph
-    enabled: true
+    enabled: false
     layout:
-      position: right
-      priority: 10
+      position: left
+      priority: 100
   - source: github:quartz-community/search
     enabled: true
     layout:
@@ -171,7 +173,7 @@ plugins:
       groupOptions:
         grow: true
   - source: github:quartz-community/backlinks
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 50
@@ -181,7 +183,7 @@ plugins:
       position: beforeBody
       priority: 10
   - source: github:quartz-community/content-meta
-    enabled: true
+    enabled: false
     layout:
       position: beforeBody
       priority: 20
@@ -202,7 +204,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -225,8 +227,9 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        LinkedIn NLM: https://www.linkedin.com/in/neelima-gupta-phd/
+        LinkedIn RA1: https://www.linkedin.com/in/kester-soh/
+        Not made by AI:
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -250,7 +253,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5

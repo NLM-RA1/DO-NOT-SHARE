@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Directory
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: quartz.jzhao.xyz
+  baseUrl: 
   ignorePatterns:
     - private
     - templates
@@ -71,7 +71,7 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
+      position: left
       priority: 30
   - source: github:quartz-community/crawl-links
     enabled: true
@@ -131,7 +131,7 @@ plugins:
       position: left
       priority: 50
   - source: github:quartz-community/graph
-    enabled: true
+    enabled: false
     layout:
       position: right
       priority: 10
