@@ -8,7 +8,7 @@ tags:
 
 <script type="module">
   // Corrected full CDN URL for the pan-zoom library
-  import svgPanZoom from 'https://jsdelivr.net';
+  import svgPanZoom from "https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.es.js";
 
   function initPanZoom() {
     const svgObject = document.getElementById('concept-map');
