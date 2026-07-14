@@ -4,7 +4,7 @@ tags:
 ---
 
 <!-- 1. Use the clean public web route instead of the local content/ folder path -->
-<object id="concept-map" type="image/svg+xml" data="/icmexca.svg" style="width: 100%; height: 600px; border: 1px solid var(--lightgray);"></object>
+<object id="concept-map" type="image/svg+xml" data="./icmexca.svg" style="width: 100%; height: 600px; border: 1px solid var(--lightgray);"></object>
 
 <script type="module">
   // Corrected full CDN URL for the pan-zoom library
